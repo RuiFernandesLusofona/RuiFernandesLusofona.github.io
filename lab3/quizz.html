@@ -30,26 +30,37 @@
 
         <form>
             <fieldset>
-                <legend>Identificação:</legend>
-                <br>
-
+                <legend>Dados Pessoais</legend>
+                <p>
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome">
-
-                <br><br>
-
-                    <label for="nome">Apelido:</label>
-                    <input type="text" name="apelido" id="apelido">
-                
-                <br><br>
-
-                    <label for="nome">Email:</label>
-                    <input type="email" name="email" id="email">
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required autocomplete="" size="30" maxlength="50" autofocus>                </p>
+                <p>
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" name="apelido" id="apelido" placeholder="Digite o seu apelido" required autocomplete="" size="30" maxlength="50">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite o seu email" required autocomplete="" size="30" maxlength="50">
                 </p>
             </fieldset>
 
+            <br>
+
             <fieldset>
-                <legend>Quizz:</legend>
+                <legend>Quizz sobre Portimão</legend>
+
+                <p>
+                    <label for="populacao">1 - Qual é a população estimada de Portimão?</label>
+                    <input type="number" name="populacao" id="populacao" placeholder="Insira um valor" required min="10000" max="100000" step="1000">
+                </p>
+
+                <p>
+                    <label>Já visitou Portimão?</label>
+                    <input type="radio" id="visitou_sim" name="visitou" value="sim" required>
+                    <label for="visitou_sim">Sim</label>
+                    <input type="radio" id="visitou_nao" name="visitou" value="não" required>
+                    <label for="visitou_nao">Não</label>
+                </p>
             </fieldset>
 
         </form>
