@@ -50,7 +50,7 @@
                 <legend>Quizz sobre Portimão</legend>
 
                 <p>
-                    <label for="populacao">1 - Qual é a população estimada de Portimão?</label>
+                    <label for="populacao">Qual é a população estimada de Portimão?</label>
                     <input type="number" name="populacao" id="populacao" placeholder="Insira um valor" required min="10000" max="100000" step="1000">
                 </p>
 
@@ -60,6 +60,57 @@
                     <label for="visitou_sim">Sim</label>
                     <input type="radio" id="visitou_nao" name="visitou" value="não" required>
                     <label for="visitou_nao">Não</label>
+                </p>
+
+                <p>
+                    <label for="gostar">O que mais gostou/gostaria de fazer em Portimão?</label>
+                    <textarea name="gostar" id="gostar" placeholder="Escreva..." rows="4" cols="50"></textarea>
+                </p>
+
+                <p>
+                <label for="ponto">Escolha o seu ponto turístico preferido:</label>
+                <input list="pontos" id="ponto" name="ponto_turistico" placeholder="Selecione ou escreva" required>
+                <datalist id="pontos">
+                <option value="Praia da Rocha">
+                <option value="Museu de Portimão">
+                <option value="Marina de Portimão">
+                <option value="Ria de Alvor">
+                </datalist>
+                </p>
+            
+                <p>
+                <label for="cor_sol">Qual a sua cor preferida para o pôr do sol em Portimão?</label>
+                <input type="color" id="cor_sol" name="cor_sol" value="#ff5733" required>
+                </p>
+
+                <p>
+                <label for="data_visita">Quando foi a última vez que visitou Portimão?</label>
+                <input type="date" id="data_visita" name="data_visita" required>
+                </p>
+
+                <p>
+                <label for="tempo_visita">Quanto tempo passou em Portimão (horas:minutos)?</label>
+                <input type="time" id="tempo_visita" name="tempo_visita" required>
+                </p>
+
+                <p>
+                <label for="avaliacao">Como avalia a sua experiência em Portimão (0 a 10)?</label>
+                <input type="range" id="avaliacao" name="avaliacao" min="0" max="10" step="1">
+                </p>
+
+                <p>
+                <label>Quais destas atividades já fez em Portimão?</label><br>
+                <input type="checkbox" id="atividade1" name="atividades[]" value="Praia da Rocha">
+                <label for="atividade1">Praia da Rocha</label><br>
+                <input type="checkbox" id="atividade2" name="atividades[]" value="Visita ao Museu de Portimão">
+                <label for="atividade2">Visita ao Museu de Portimão</label><br>
+                <input type="checkbox" id="atividade3" name="atividades[]" value="Passeio de barco pela Ria de Alvor">
+                <label for="atividade3">Passeio de barco pela Ria de Alvor</label>
+                </p>
+
+                <p>
+                <label for="imagem_marina">Escolha a imagem da Marina de Portimão:</label><br>
+                <input type="image" src="https://example.com/marina_portimao.jpg" alt="Marina de Portimão" id="imagem_marina">
                 </p>
             </fieldset>
 
