@@ -56,11 +56,11 @@
 
                 <p>
                     <label>Qual destes é um prato típico de Portimão?</label>
-                    <input type="radio" id="sardinhas" name="prato_tipico" value="Sardinhas Assadas" required>
+                    <input type="radio" name="prato_tipico" id="sardinhas" value="Sardinhas Assadas" required>
                     <label for="sardinhas">Sardinhas Assadas</label>
-                    <input type="radio" id="arroz" name="prato_tipico" value="Arroz de Marisco" required>
+                    <input type="radio" name="prato_tipico" id="arroz" value="Arroz de Marisco" required>
                     <label for="arroz">Arroz de Marisco</label>
-                    <input type="radio" id="francesinha" name="prato_tipico" value="Francesinha" required>
+                    <input type="radio" name="prato_tipico" id="francesinha" value="Francesinha" required>
                     <label for="francesinha">Francesinha</label>
                 </p>
 
@@ -70,52 +70,68 @@
                 </p>
 
                 <p>
-                <label for="ponto">Escolha o seu ponto turístico preferido:</label>
-                <input list="pontos" id="ponto" name="ponto_turistico" placeholder="Selecione ou escreva" required>
-                <datalist id="pontos">
-                <option value="Praia da Rocha">
-                <option value="Museu de Portimão">
-                <option value="Marina de Portimão">
-                <option value="Ria de Alvor">
-                </datalist>
+                    <label for="ponto">Escolha um ponto turístico que gostaria de visitar:</label>
+                    <input list="pontos" name="ponto_turistico" id="ponto" placeholder="Selecione ou escreva" required>
+                    <datalist id="pontos">
+                        <option value="Praia da Rocha">
+                        <option value="Museu de Portimão">
+                        <option value="Marina de Portimão">
+                        <option value="Ria de Alvor">
+                    </datalist>
                 </p>
             
                 <p>
-                <label for="cor_sol">Qual a sua cor preferida para o pôr do sol em Portimão?</label>
-                <input type="color" id="cor_sol" name="cor_sol" value="#ff5733" required>
+                    <label for="cor_agua">Qual é a cor da água em Portimão?</label>
+                    <input type="color" name="agua" id="agua" value="#ff5733" required>
                 </p>
 
                 <p>
-                <label for="data_visita">Quando foi a última vez que visitou Portimão?</label>
-                <input type="date" id="data_visita" name="data_visita" required>
+                    <label for="data_feriado">Quando é o feriado municipial de Portimão?</label>
+                    <input type="date" name="data_feriado" id="data_feriado" required>
                 </p>
 
                 <p>
-                <label for="tempo_visita">Quanto tempo passou em Portimão (horas:minutos)?</label>
-                <input type="time" id="tempo_visita" name="tempo_visita" required>
+                    <label for="tempo_visita">Quanto tempo passou/quer passar em Portimão (horas:minutos)?</label>
+                    <input type="time" id="tempo_visita" name="tempo_visita" required>
                 </p>
 
                 <p>
-                <label for="avaliacao">Como avalia a sua experiência em Portimão (0 a 10)?</label>
-                <input type="range" id="avaliacao" name="avaliacao" min="0" max="10" step="1">
+                    <label for="avaliacao">Como avalia Portimão? (0 a 10)?</label>
+                    <input type="range" id="avaliacao" name="avaliacao" min="0" max="10" step="1">
                 </p>
 
                 <p>
-                <label>Quais destas atividades já fez em Portimão?</label><br>
-                <input type="checkbox" id="atividade1" name="atividades[]" value="Praia da Rocha">
-                <label for="atividade1">Praia da Rocha</label><br>
-                <input type="checkbox" id="atividade2" name="atividades[]" value="Visita ao Museu de Portimão">
-                <label for="atividade2">Visita ao Museu de Portimão</label><br>
-                <input type="checkbox" id="atividade3" name="atividades[]" value="Passeio de barco pela Ria de Alvor">
-                <label for="atividade3">Passeio de barco pela Ria de Alvor</label>
+                    <label>Quais destas atividades já fez/quer fazer em Portimão?</label><br>
+                    <input type="checkbox" name="atividades[]" id="atividade1" value="Praia da Rocha">
+                    <label for="atividade1">Praia da Rocha</label><br>
+                    <input type="checkbox"  name="atividades[]"id="atividade2" value="Visita ao Museu de Portimão">
+                    <label for="atividade2">Visita ao Museu de Portimão</label><br>
+                    <input type="checkbox" name="atividades[]" id="atividade3" value="Passeio de barco pela Ria de Alvor">
+                    <label for="atividade3">Passeio de barco pela Ria de Alvor</label>
                 </p>
 
                 <p>
-                <label for="imagem_marina">Escolha a imagem da Marina de Portimão:</label><br>
-                <input type="image" src="https://example.com/marina_portimao.jpg" alt="Marina de Portimão" id="imagem_marina">
+                    <label for="melhor_epoca">Qual a melhor época para visitar Portimão?</label>
+                    <select name="melhor_epoca" id="melhor_epoca" required>
+                        <option value="Verão">Verão</option>
+                        <option value="Primavera">Primavera</option>
+                        <option value="Outono">Outono</option>
+                        <option value="Inverno">Inverno</option>
+                    </select>
                 </p>
+
+                <label for="submit_image">Submeter o quizz:</label><br>
+                <input type="image" id="submit_image" name="submit_image" src="images/img_submit.gif" alt="Botão Submeter" width="48" height="48">
+
+                <p>
+                    <input type="reset" value="Limpar formulário">
+                </p>
+                
             </fieldset>
 
+        </form>
+
+        <form method="get" action="https://postman-echo.com/get">
         </form>
     </main>
     
