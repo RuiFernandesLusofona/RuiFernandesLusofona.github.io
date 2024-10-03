@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header h1{
+    padding: 10px ;
+    background-color: green;
+    color: white;
+}
+
+nav {
+    padding: 10px;
+    background-color: black;
+}
+
+nav a {
+    padding: 5px 10px;
+    color: white;
+}
+

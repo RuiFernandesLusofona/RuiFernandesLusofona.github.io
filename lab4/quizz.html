@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portimão</title>
+</head>
+
+<body>
+    <header>
+        <h1>A minha Cidade</h1>
+    
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informação</a>
+        <a href="quizz.html">Quizz</a>
+        <a href="viagem.html">Viagem</a>
+    </nav>
+        
+    <div>
+        <img src="images/cidade.png" alt="Cidade de Portimão">
+    </div>
+
+    </header>
+
+    <main>
+        <h2>Quizz</h2>
+
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required autocomplete="" size="30" maxlength="50" autofocus>                </p>
+                <p>
+
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" name="apelido" id="apelido" placeholder="Digite o seu apelido" required autocomplete="" size="30" maxlength="50">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite o seu email" required autocomplete="" size="30" maxlength="50">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Quizz sobre Portimão</legend>
+
+                <p>
+                    <label for="populacao">Qual é a população estimada de Portimão?</label>
+                    <input type="number" name="populacao" id="populacao" placeholder="Insira um valor" required min="10000" max="100000" step="1000">
+                </p>
+
+                <p>
+                    <label>Qual destes é um prato típico de Portimão?</label>
+                    <input type="radio" name="prato_tipico" id="sardinhas" value="Sardinhas Assadas" required>
+                    <label for="sardinhas">Sardinhas Assadas</label>
+                    <input type="radio" name="prato_tipico" id="arroz" value="Arroz de Marisco" required>
+                    <label for="arroz">Arroz de Marisco</label>
+                    <input type="radio" name="prato_tipico" id="francesinha" value="Francesinha" required>
+                    <label for="francesinha">Francesinha</label>
+                </p>
+
+                <p>
+                    <label for="gostar">O que mais gostou/gostaria de fazer em Portimão?</label>
+                    <br>
+                    <textarea name="gostar" id="gostar" placeholder="Escreva..." rows="4" cols="50"></textarea>
+                </p>
+
+                <p>
+                    <label for="ponto">Escolha um ponto turístico que gostaria de visitar:</label>
+                    <input list="pontos" name="ponto_turistico" id="ponto" placeholder="Selecione ou escreva" required>
+                    <datalist id="pontos">
+                        <option value="Praia da Rocha">
+                        <option value="Museu de Portimão">
+                        <option value="Marina de Portimão">
+                        <option value="Ria de Alvor">
+                    </datalist>
+                </p>
+            
+                <p>
+                    <label for="cor_agua">Qual é a cor da água em Portimão?</label>
+                    <input type="color" name="agua" id="agua" value="#ff5733" required>
+                </p>
+
+                <p>
+                    <label for="data_feriado">Quando é o próximo feriado municipial de Portimão?</label>
+                    <input type="date" name="data_feriado" id="data_feriado" required>
+                </p>
+
+                <p>
+                    <label for="tempo_visita">Quanto tempo passou/quer passar por dia em Portimão? (horas:minutos)?</label>
+                    <input type="time" name="tempo_visita" id="tempo_visita" required>
+                </p>
+
+                <p>
+                    <label for="avaliacao">Como avalia Portimão? (0 a 10)?</label>
+                    <input type="range" name="avaliacao" id="avaliacao" min="0" max="10" step="1">
+                </p>
+
+                <p>
+                    <label>Quais destas atividades já fez/quer fazer em Portimão?</label><br>
+                    <input type="checkbox" name="atividades[]" id="atividade1" value="Praia da Rocha">
+                    <label for="atividade1">Praia da Rocha</label><br>
+                    <input type="checkbox"  name="atividades[]"id="atividade2" value="Visita ao Museu de Portimão">
+                    <label for="atividade2">Visita ao Museu de Portimão</label><br>
+                    <input type="checkbox" name="atividades[]" id="atividade3" value="Passeio de barco pela Ria de Alvor">
+                    <label for="atividade3">Passeio de barco pela Ria de Alvor</label>
+                </p>
+
+                <p>
+                    <label for="melhor_epoca">Qual a melhor época para visitar Portimão?</label>
+                    <select name="melhor_epoca" id="melhor_epoca" required>
+                        <option value="Verão">Verão</option>
+                        <option value="Primavera">Primavera</option>
+                        <option value="Outono">Outono</option>
+                        <option value="Inverno">Inverno</option>
+                    </select>
+                </p>
+
+                <label for="submit_image">Submeter o quizz:</label><br>
+                <input type="image" id="submit_image" name="submit_image" src="images/img_submit.gif" alt="Botão Submeter" width="48" height="48">
+
+                <p>
+                    <input type="reset" value="Limpar formulário">
+                </p>
+                
+            </fieldset>
+
+        </form>
+
+        <form method="get" action="https://postman-echo.com/get">
+        </form>
+    </main>
+    
+    <footer>
+        <p>DIW 2024</p>
+        <a href="https://ruifernandeslusofona.github.io/">Voltar para Website Principal</a>
+    </footer>
+</body>
+</html>
