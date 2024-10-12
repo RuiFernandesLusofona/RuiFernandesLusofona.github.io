@@ -16,6 +16,7 @@ article {
 header {
   display: flex;
   position: sticky;
+  z-index: 1000;
   top: 0;
   height: 10vh;  
   justify-content: space-between;  
