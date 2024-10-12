@@ -104,14 +104,20 @@ label, input {
 
 #restaurantes, #monumentos, #locais, #localFoto, #alturaVisita {
 
-    #pontointeresse {
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-    }
     padding-bottom: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
     margin-top: 10px;
+}
+
+#pontointeresse {
+    p {
+        padding-top: 10px;
+        margin-top: 10px;
+        text-indent: 10px;
+    }
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .listaOrdenadaRestaurantes, .listaOrdenadaMonumentos, .listaLocais, .localFotoFrame, .tableVisita {
