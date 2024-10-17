@@ -1,0 +1,112 @@
+* {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  
+  
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  height: 10vh;  
+  justify-content: space-between;  
+  align-items: center;
+  color: white;
+  background-color: #58c736;
+}
+
+header h1 {
+  font-size: 2em;  
+  padding: 1em;
+}
+
+nav a {
+  padding:20px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+nav a:last-child{
+  background-color: #36b310
+
+}
+
+nav a:hover {
+    background-color: #36b310;
+    color: black;
+    transition: all 0.3s ease;  
+}
+
+
+main {
+    height: 90vh;
+  background: purple;
+}
+
+#poema {
+  width: 100vw;
+  height: 50vh;
+  background: rgb(131, 191, 226);
+
+  i {
+    font-size: 0.8em;
+  }
+
+}
+
+#paisagens {
+
+  position:relative;
+
+  img {
+    width:100vw
+  }
+
+  p {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color:white;
+  }
+}
+
+article#cidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5vw;
+  background-color: whitesmoke;
+}
+
+#cidades section {
+  display: flex;
+  margin: 10px;
+}
+
+#cidades img{
+  width: 150px;
+  height: 100px;
+  border-radius: 20px 0 0 20px;
+}
+
+#cidades div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100px;
+  font-size: 0.8em;
+  border-radius: 0 20px 20px 0;
+  background:white;
+}

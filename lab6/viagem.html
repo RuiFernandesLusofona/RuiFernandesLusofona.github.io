@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portimão</title>
+</head>
+
+<body>
+    <header>
+        <h1>Portimão</h1>
+    
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informação</a>
+        <a href="quizz.html">Quizz</a>
+        <a href="viagem.html">Viagem</a>
+        <a href="pontosinteresse.html">Pontos de Interesse</a>
+        <a href="capitais.html">Capitais</a>
+    </nav>
+        
+    <div style="padding-top: 20px;">
+        <img src="images/cidade.png" alt="Cidade de Portimão">
+    </div>
+
+    </header>
+
+    <main>
+        <h2>Viagem</h2>
+
+        <form method="get" action="https://postman-echo.com/get">
+            <fieldset>
+                <legend>Registo de Viagem</legend>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required autocomplete="" size="30" maxlength="50" autofocus>                </p>
+                <p/>
+
+                <p>
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" name="apelido" id="apelido" placeholder="Digite o seu apelido" required autocomplete="" size="30" maxlength="50">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite o seu email" required autocomplete="" size="30" maxlength="50">
+                </p>
+                
+                <p>
+                    <label for="data_partida">Data de Partida:</label>
+                    <input type="date" name="data_partida" id="data_partida" required>
+                </p>
+
+                <p>
+                    <label for="data_regresso">Data de Partida:</label>
+                    <input type="date" name="data_regresso" id="data_regresso" required>
+                </p>
+
+                <p>
+                    <label for="passageiros">Número de Passageiros:</label>
+                    <input type="number" name="passageiros" id="passageiros" min="1" required>
+                </p>
+
+                <p>
+                    <label for="transporte">Meio de Transporte Favorito:</label>
+                    <select id="transporte" name="transporte" required>
+                        <option value="carro">Carro</option>
+                        <option value="comboio">Comboio</option>
+                        <option value="aviao">Avião</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Serviço Desejado:</label>
+                    <input type="radio" name="servico" id="basico" value="basico" required>
+                    <label for="basico">Básico</label>
+                    <input type="radio" name="servico" id="premium" value="premium" required>
+                    <label for="premium">Premium</label>
+                </p>
+
+                <p>
+                    <label for="pedidos_especiais">Pedidos Especiais:</label>
+                    <textarea name="pedidos_especiais" id="pedidos_especiais" placeholder="Escreva..." rows="4" cols="50"></textarea>
+                </p>
+
+                <p>
+                    <label for="valor">Valor Esperado por Pessoa e por Dia (€)</label>
+                    <input type="number" name="valor" id="valor" min="0" step="0.01" required>
+                </p>
+
+                <p>
+                <input type="reset" value="Limpar formulário">
+                <input type="submit" value="Submeter quizz">
+                </p>
+            </fieldset>
+        </form>
+
+        
+        <form method="get" action="https://postman-echo.com/get">
+        </form>
+    
+    </main>
+    
+    <footer>
+        <p>DIW 2024</p>
+    </footer>
+</body>
+</html>
