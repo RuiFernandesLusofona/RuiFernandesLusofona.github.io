@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,14 +15,21 @@ header {
     text-align: center;
 }
 
-header h1{
-    padding: 10px ;
+aside {
+    padding-top: 20px;
+    text-align: center;
+}
+
+header h1 {
+    padding: 10px;
     background-color: #58c736;
     color: white;
     text-transform: uppercase;
 }
 
 nav {
+
+    text-align: center;
     padding: 10px;
     background-color: #393939;
 }
@@ -42,22 +49,28 @@ main {
     margin: 20px;
     padding: 20px;
     padding-left: 20px;
-    background-color :white;
+    background-color: white;
 }
 
-#linkfotografias, #linkvideo, #linkpoema{
+#linkfotografias,
+#linkvideo,
+#linkpoema {
     background-color: white;
     color: #4CAF50;
     padding: 5px 10px;
 }
 
-#linkfotografias:hover, #linkvideo:hover, #linkpoema:hover{
+#linkfotografias:hover,
+#linkvideo:hover,
+#linkpoema:hover {
     background-color: #4CAF50;
     color: white;
     transition: all 0.3s ease;
 }
 
-#fotografias h3, #video h3, #poema h3 {
+#fotografias h3,
+#video h3,
+#poema h3 {
     color: #4CAF50;
     font-size: 24px;
     border-bottom: 2px solid #4CAF50;
@@ -69,17 +82,17 @@ main {
 
 .fotografia {
     text-align: center;
-  }
-  
-  iframe {
+}
+
+iframe {
     max-width: 100%;
 }
 
 .youtube {
     text-align: center;
-  }
-  
-  iframe {
+}
+
+iframe {
     max-width: 100%;
 }
 
@@ -98,12 +111,17 @@ input {
     font-size: medium;
 }
 
-label, input {
+label,
+input {
     display: block;
     margin-bottom: 10px;
 }
 
-#restaurantes, #monumentos, #locais, #localFoto, #alturaVisita {
+#restaurantes,
+#monumentos,
+#locais,
+#localFoto,
+#alturaVisita {
 
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -117,24 +135,31 @@ label, input {
         margin-top: 10px;
         text-indent: 10px;
     }
+
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
-.listaOrdenadaRestaurantes, .listaOrdenadaMonumentos, .listaLocais, .localFotoFrame, .tableVisita {
+.listaOrdenadaRestaurantes,
+.listaOrdenadaMonumentos,
+.listaLocais,
+.localFotoFrame,
+.tableVisita {
     padding-top: 10px;
     margin-top: 10px;
     padding-left: 10px;
 }
 
-.listaOrdenadaRestaurantes, .listaOrdenadaMonumentos, .listaLocais {
+.listaOrdenadaRestaurantes,
+.listaOrdenadaMonumentos,
+.listaLocais {
 
     font-size: 2em;
     margin-left: 30px;
 
     li:nth-child(2n) {
         color: #5fccdf;
-      } 
+    }
 
     ul {
         list-style-type: circle;
@@ -147,7 +172,8 @@ label, input {
 
 .tableVisita {
 
-    td, th {
+    td,
+    th {
         padding: 10px;
     }
 
@@ -155,12 +181,12 @@ label, input {
 
         color: white;
 
-        td:nth-child(odd){
+        td:nth-child(odd) {
             background-color: #08335c;
         }
 
-        td:nth-child(even){
-            background-color: #5f5e5e; /* Cor de fundo para linhas ímpares */
+        td:nth-child(even) {
+            background-color: #5f5e5e;
         }
     }
 
@@ -170,9 +196,9 @@ label, input {
 
 .localFotoFrame {
     text-align: center;
-  }
-  
-  iframe {
+}
+
+iframe {
     max-width: 100%;
 }
 
@@ -182,4 +208,3 @@ footer {
     background-color: #393939;
     color: white;
 }
-
