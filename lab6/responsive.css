@@ -1,0 +1,41 @@
+/* MOBILE PORTRAIT*/
+@media only screen and (max-width: 480px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 55px 55px 370px 1fr 35px;
+        grid-template-areas:
+            'header'
+            'nav'
+            'aside'
+            'main'
+            'footer';
+    }
+}
+
+
+/* MOBILE LANDSCAPE*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+    }
+}
+
+/* TABLET*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+    }
+}
+
+/* LAPTOP*/
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* 4K*/
+@media only screen and (min-width: 2560px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
