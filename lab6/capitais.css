@@ -57,7 +57,6 @@ main {
 #poema {
   width: 100vw;
   height: 50vh;
-  background: rgb(131, 191, 226);
 
   i {
     font-size: 0.8em;
@@ -109,4 +108,26 @@ article#cidades {
   font-size: 0.8em;
   border-radius: 0 20px 20px 0;
   background:white;
+}
+
+article#parallax {
+  background-image: url('images/teste.jpg');
+  min-height: 200px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes mudarCor {
+  0% {
+      background-color: black; 
+  }
+  100% {
+      background-color: transparent; 
+  }
+}
+
+body {
+  animation: mudarCor 3s ease-in-out forwards;
 }
