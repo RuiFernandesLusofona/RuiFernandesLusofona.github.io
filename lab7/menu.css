@@ -1,0 +1,28 @@
+nav {
+    margin-bottom: 20px; /* Espaço abaixo do menu */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+nav li {
+    display: inline-block; /* Itens em linha com preenchimento */
+    margin-right: 15px; /* Espaçamento entre os itens */
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #009688; /* Cor do texto do link */
+    padding: 10px 15px; /* Preenchimento para links */
+    background-color: #e0f7fa; /* Cor de fundo dos links */
+    border: 1px solid #009688; /* Borda para combinar com o estilo */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+}
+
+nav a:hover {
+    background-color: #ffeb3b; /* Cor de fundo ao passar o mouse */
+    color: #000; /* Cor do texto ao passar o mouse */
+}
