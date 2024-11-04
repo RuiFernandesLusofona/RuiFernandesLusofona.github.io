@@ -30,3 +30,35 @@ function pintar_blue() {
 }
 botao_blue.addEventListener('click', pintar_blue)
 
+const elemento_random = document.querySelector('#random');
+function colorir_random() {
+   // Define o valor mínimo para cada componente (quanto maior, mais clara a cor)
+   const minimo = 128;
+
+   // Gera componentes de cor RGB com valores aleatórios entre minimo e 255
+   const r = minimo + Math.floor(Math.random() * (256 - minimo));
+   const g = minimo + Math.floor(Math.random() * (256 - minimo));
+   const b = minimo + Math.floor(Math.random() * (256 - minimo));
+
+   // Converte os valores RGB para o formato hexadecimal
+   const cor = `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+   elemento_random.style.backgroundColor = cor;
+}
+elemento_random.addEventListener('keydown', colorir_random)
+
+const elemento_bgColor = document.querySelector('#bgColor');
+const submitButton = document.querySelector('.submitButton');
+function colorir_background() {
+   const corEscolhida = elemento_bgColor.value;
+   document.body.style.backgroundColor = corEscolhida;
+}
+submitButton.addEventListener('click', colorir_background);
+
+const contarButton = document.querySelector('.contar');
+const element_numero = document.querySelector('.number');
+function contar_click(){
+   let numeroAtual = parseInt(element_numero.textContent);
+   numeroAtual += 1;
+   element_numero.textContent = numeroAtual
+}
+contarButton.addEventListener('click', contar_click);
