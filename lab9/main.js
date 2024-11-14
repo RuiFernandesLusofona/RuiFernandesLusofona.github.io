@@ -7,6 +7,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
         criarProduto(produto)
         listaProdutos.append(criarArticle(produto))
-
     })
 })  
